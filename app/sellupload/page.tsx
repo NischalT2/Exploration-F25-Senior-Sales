@@ -158,6 +158,8 @@ export default function Home() {
     }
   };
 
+  const priceHasError = !price || Boolean(priceError);
+
   return (
     <>
       {/* header section */}
@@ -186,8 +188,7 @@ export default function Home() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          "& .MuiTextField-root": { m: 1, width: "100%" },
+          alignItems: "stretch",
           maxWidth: 700,
           width: "100%",
           mx: "auto",
@@ -257,8 +258,9 @@ export default function Home() {
                 if (formatted !== price) setPrice(formatted);
               }
             }}
-            error={Boolean(priceError)}
-            helperText={priceError || ""}
+            error={ priceHasError }
+            helperText={
+              priceError || (!price ? "Please enter price" : "")}
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">$</InputAdornment>
