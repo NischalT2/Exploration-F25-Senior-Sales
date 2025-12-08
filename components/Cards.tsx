@@ -1,13 +1,13 @@
 'use client';
 
-export default function Tags() {
+export default function Cards() {
     return (
         <main className = "bg-gray-50 px-4 py-4 bg-gray-50 pt-32">
-            <div className="text-ml font-semibold text-gray-700 pl-1">
+            <div className="text-ml font-semibold text-gray-700 pl-6">
                 Search By Category
             </div>
             <section className="relative max-w-6xl">
-                <div className="z-20 flex space-x-8 py-2 pl-1 font-semibold">
+                <div className="z-20 flex space-x-6 py-2 pl-6 font-semibold">
                     <button className="flex-none w-44 bg-white rounded shadow-sm border border-gray-200">
                     <img src="https://media-photos.depop.com/b1/38815648/2046573853_20337d33c2364f579c9b4f844f445fac/P0.jpg"
                         className="h-50 w-full object-cover rounded-t"/>
@@ -46,11 +46,11 @@ export default function Tags() {
                 </div>
 
             </section>
-            <div className="text-ml font-semibold pt-2 text-gray-700 pl-1">
+            <div className="text-ml font-semibold pt-2 text-gray-700 pl-6">
                 Search By House
             </div>
                 <section className="relative max-w-6xl">
-                <div className="flex space-x-8 py-2 pl-1">
+                <div className="flex space-x-6 py-2 pl-6">
                     <div className="flex-none w-44 bg-white rounded shadow-sm border-gray-200">
                         <img src="https://tse3.mm.bing.net/th/id/OIP.hqUhA2cdmiooVJsS-Vf7YQAAAA?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
                             className="h-50 w-full object-cover rounded"/>
@@ -90,11 +90,11 @@ export default function Tags() {
                 </section>
 
 
-            <div className="text-ml font-semibold pt-2 text-gray-700 pl-1">
+            <div className="text-ml font-semibold pt-2 text-gray-700 pl-6">
                 Recent Listings
             </div>
                 <section className="relative max-w-6xl">
-                <div className="flex space-x-8 py-2 pl-1">
+                <div className="flex space-x-6 py-2 pl-6">
                     
                     <div className="flex-none w-44 rounded shadow-sm border border-gray-200 relative">
                         <img src="https://tse2.mm.bing.net/th/id/OIP.wWRdlZ9ViY_PxVmki0cC_AHaJ3?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
